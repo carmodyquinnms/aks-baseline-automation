@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "resourceGroupName": {
-            "value": "rg-enterprise-networking-hubs"
+            "value": "rg-bahram-networking-hubs"
         },
         "location": {
             "value": "eastus"

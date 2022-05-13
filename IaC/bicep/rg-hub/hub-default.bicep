@@ -1,7 +1,7 @@
 targetScope = 'subscription'
 
 @description('Name of the resource group')
-param resourceGroupName string = 'rg-enterprise-networking-hubs'
+param resourceGroupName string = 'rg-bahram-networking-hubs'
 
 @description('The hub\'s regional affinity. All resources tied to this hub will also be homed in this region. The network team maintains this approved regional list which is a subset of zones with Availability Zone support.')
 @allowed([

@@ -1,7 +1,7 @@
 targetScope = 'subscription'
 
 @description('Name of the resource group')
-param resourceGroupName string = 'rg-enterprise-networking-spokes'
+param resourceGroupName string = 'rg-bahram-networking-spokes'
 
 @description('The regional hub network to which this regional spoke will peer to.')
 param hubVnetResourceId string

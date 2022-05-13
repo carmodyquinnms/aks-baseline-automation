@@ -1,8 +1,8 @@
 targetScope = 'subscription'
 
 @description('Name of the resource group')
-param resourceGroupName string = 'rg-bu0001a0008'
-param vNetResourceGroup string = 'rg-enterprise-networking-spokes'
+param resourceGroupName string = 'rg-bahram'
+param vNetResourceGroup string = 'rg-bahram-networking-spokes'
 
 @description('The regional network spoke VNet Resource ID that the cluster will be joined to')
 @minLength(79)
