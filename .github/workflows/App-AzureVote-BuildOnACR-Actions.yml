@@ -105,7 +105,7 @@ jobs:
 
           CURRENT_IP_ADDRESS=$(curl -s -4 https://ifconfig.io)
           echo "Client IP address: $CURRENT_IP_ADDRESS"
-          az keyvault network-rule add -n $ACRNAME --ip-address ${CURRENT_IP_ADDRESS}
+          az acr network-rule add -n $ACRNAME --ip-address ${CURRENT_IP_ADDRESS}
 
           echo "Requesting ACR build on $ACRSERVER for image $IMAGEREPO:${{ github.sha }}"
           az acr build -t $REPOSITORY/$IMAGEREPO:${{ github.sha }} -r $ACRNAME $APPREPOPATH/.
